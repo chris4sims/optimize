@@ -1,0 +1,9 @@
+Package: optimize.1
+Type: Package
+Title: Optimization Programs
+Version: 1.0
+Date: 2019-12-09 
+Author: Chris Sims
+Maintainer: Chris Sims <sims@princeton.edu>
+Description: Unconstrained optimization.
+RoxygenNote: 7.2.0

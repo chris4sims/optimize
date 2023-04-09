@@ -15,7 +15,7 @@ numgrad(fcn, x, ...)
 }
 \value{
 \item{g}{numerical gradient}
-        \item{badg}{Is there a numerical problem with the gradient?}
+\item{badg}{Is there a numerical problem with the gradient?}
 }
 \description{
 Simple delta f / delta x numerical gradient

@@ -1,9 +1,16 @@
-Package: optimize.1
-Type: Package
+Package: optimize
 Title: Optimization Programs
-Version: 1.0
-Date: 2019-12-09 
-Author: Chris Sims
-Maintainer: Chris Sims <sims@princeton.edu>
-Description: Unconstrained optimization.
-RoxygenNote: 7.2.0
+Version: 0.1
+Date: 2023-04-09
+Authors@R: 
+    person(given = "Chris",
+           family = "Sims",
+           role = c("aut", "cre"),
+           email = "sims@princeton.edu",
+           comment = c(ORCID = "0000-0002-5479-9757"))
+Description: Unconstrained optimization. Numerical or analytic derivatives. Attempts to avoid getting stuck.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1

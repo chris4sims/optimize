@@ -2,20 +2,17 @@
 % Please edit documentation in R/numHess.R
 \name{numHess}
 \alias{numHess}
-\title{Numerical Hessian}
+\title{numHess}
 \usage{
 numHess(fcn, x, ...)
 }
 \arguments{
-\item{fcn}{The function to differentiate.}
+\item{fcn}{The function to be differentiated.}
 
-\item{x}{The point at which to differentiate.}
-
-\item{...}{Additional arguments for \code{fcn}.}
-}
-\value{
-Numerical second derivative matrix
+\item{x}{The point at which the Hessian is to be calculated.}
 }
 \description{
-Naive numerical Hessian.  Just applies numgrad twice.
+Numerical Hessian.  This is a naive calculation, just
+applying \code{numgrad()}'s simple forward difference estimate
+twice.
 }

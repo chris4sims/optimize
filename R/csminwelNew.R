@@ -117,7 +117,7 @@ function(fcn,x0,H0,...,grad=NULL,crit=1e-7,nit,Verbose=TRUE,Long=FALSE) {
         ## Bad gradient or back and forth on step length.  Possibly at
         ## cliff edge.  Try perturbing search direction, if problem is not unidimensional
         ##
-        Hcliff <- H+diag(diag(H) * rnorm(nx))
+        Hcliff <- H+diag(diag(H) * exp(rnorm(nx))) #exp() added 10/5/21
         cat("Cliff.  Perturbing search direction. \n")
         itout <- csminit(fcn,x0=x,f0=f,g0=g, badg=badg, H0=Hcliff, Verbose=Verbose,...)
         f2 <- itout$fhat

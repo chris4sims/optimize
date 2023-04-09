@@ -13,11 +13,11 @@
 #' @return \item{g}{numerical gradient}
 #'         \item{badg}{Is there a numerical problem with the gradient?}
 #' @export
-#' 
+#' @md
 numgrad <-
 function(fcn, x, ...) {
   ## fcn can return a vector, in which case numgrad returns a matrix.
-  delta <- 1e-8
+  delta <- 1e-6
   ## delta <- 1e-8
   n <- length(x)
   ## we tolerate x's that may be n x 1, 1 x n, or R vectors (with no dim),

@@ -1,17 +1,14 @@
-#' Numerical Hessian
-#' 
-#' Naive numerical Hessian.  Just applies numgrad twice.
-#' 
-#' 
-#' @param fcn The function to differentiate.
-#' @param x The point at which to differentiate.
-#' @param ... Additional arguments for `fcn`.
-#' 
-#' @return 
-#' Numerical second derivative matrix
+#' numHess
+#'
+#' Numerical Hessian.  This is a naive calculation, just
+#' applying `numgrad()`'s simple forward difference estimate
+#' twice.
+#'
+#' @param fcn The function to be differentiated.  
+#' @param x The point at which the Hessian is to be calculated.
+#'
 #' @export
 #' @md
-#' 
 numHess <- function(fcn, x, ...) {
   f1 <- fcn
   n <- length(x)
@@ -19,5 +16,5 @@ numHess <- function(fcn, x, ...) {
   f2 <- function(z, ...) { numgrad(fcn=f1, z, ...)$g}
   h <- numgrad(fcn=f2, x=x, ...)$g
   return(h)
-  }
-
+}
+    

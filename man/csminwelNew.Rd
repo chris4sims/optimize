@@ -39,16 +39,17 @@ to improve the function value by more than this.}
 \item{nit}{Maximum number of iterations.}
 }
 \value{
-\item{fh}{Mimimized function value.}
-       \item{xh}{Argument value at optimum.}
-       \item{gh}{Gradient at optimum.}
-       \item{H}{Approximate inverse Hessian at optimum.}
-       \item{itct}{Number of iterations.}
-       \item{fcount}{Number of function evaluations}
-       \item{retcodeh}{Return code of last iteration (see
-              \code{\link{csminit}})}.
-        \item{match.call()}{Call invoking the function}
-       \item{...}{Same as input parameter ...}
+\if{html}{\out{<div class="sourceCode">}}\preformatted{   \\item\{fh\}\{Mimimized function value.\}
+   \\item\{xh\}\{Argument value at optimum.\}
+   \\item\{gh\}\{Gradient at optimum.\}
+   \\item\{H\}\{Approximate inverse Hessian at optimum.\}
+   \\item\{itct\}\{Number of iterations.\}
+   \\item\{fcount\}\{Number of function evaluations\}
+   \\item\{retcodeh\}\{Return code of last iteration (see
+          \code{\link{csminit}})\}.
+    \\item\{match.call()\}\{Call invoking the function\}
+   \\item\{...\}\{Same as input parameter ...\}
+}\if{html}{\out{</div>}}
 }
 \description{
 Uses numeric or analytic gradients and a "satisficing" line search, building up

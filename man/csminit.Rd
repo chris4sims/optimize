@@ -24,11 +24,12 @@ csminit(fcn, x0, f0, g0, badg, H0, Verbose, ...)
 \value{
 \item{fhat}{New function value}
 
-        \item{xhat}{New x value}
+\if{html}{\out{<div class="sourceCode">}}\preformatted{    \\item\{xhat\}\{New x value\}
 
-        \item{fcount}{Function evaluation count}
+    \\item\{fcount\}\{Function evaluation count\}
 
-        \item{retcode}{return code (see Details)}
+    \\item\{retcode\}\{return code (see Details)\}
+}\if{html}{\out{</div>}}
 }
 \description{
 Computes step direction and adjusts step length to achieve target rate of decrease, with
